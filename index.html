@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aservice</title>
+    <script src="game.js"></script>
+<body onload="startGame()">
+<style>
+    .main {
+        width: 50vw;
+        margin: 50px auto;
+    }
+
+    button {
+        margin: 20px 50px;
+        text-transform: uppercase;
+    }
+
+    .infoText {
+        margin: 50px 0;
+        text-align: center;
+    }
+</style>
+
+<div class="infoText">
+    <h3>Уважаемые клиенты. В данный момент на сайте идут работы. Через мгновение он заработает. Спасибо за ожидание :)</h3>
+    <br>
+    <h3>Dear Clients. At the moment on the site are working. In a moment he will earn. Thanks for waiting :)</h3>
+    <img src="atwork3.gif">
+</div>
+
+<div class="main">
+    <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Accelerate</button>
+    <button onclick="location.reload()">Start again</button>
+    <br>
+</div>
+</body>
+</html>
